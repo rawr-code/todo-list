@@ -42,7 +42,6 @@ export const removeTodo = data => async (
       .update({
         todos: firestore.FieldValue.arrayRemove(data)
       });
-    console.log(data);
 
     dispatch({ type: ADD_TODO_SUCCESS });
   } catch (err) {

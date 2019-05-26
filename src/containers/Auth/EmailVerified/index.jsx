@@ -77,7 +77,7 @@ const EmailVerifiedContainer = ({ sendVerificationEmail, loading, error }) => {
             Correo de verificación enviado
           </Typography>
           <Typography variant="subtitle1" color="textSecondary" align="center">
-            revise su bandeja de entrada
+            recargue la pestaña despues de verificar su cuenta
           </Typography>
         </CardContent>
       </div>

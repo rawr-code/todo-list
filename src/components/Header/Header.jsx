@@ -19,15 +19,7 @@ const Header = props => {
   const { classes, title, loggedIn } = props;
 
   let links;
-  if (loggedIn && !emailVerified) {
-    routes = (
-      <>
-        <Button color="inherit" component={Link} to="/logout">
-          Logout
-        </Button>
-      </>
-    );
-  } else if (loggedIn.uid && emailVerified) {
+  if (loggedIn.uid) {
     links = (
       <>
         <Button color="inherit" component={Link} to="/">
